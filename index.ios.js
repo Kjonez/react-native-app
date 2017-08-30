@@ -2,11 +2,16 @@
 //Native gets ahold of the native device
 
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { Text, View, AppRegistry } from 'react-native';
 import Header from './src/components/header.js'
+import AlbumList from './src/components/albumlist.js'
 
 const App = () => (
-  <Header />
+	<View>
+		<Header headerText ={'Albums'} />
+		<AlbumList />
+	</View>
+  
 );
 
 
